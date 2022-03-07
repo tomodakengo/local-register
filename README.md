@@ -10,3 +10,8 @@
 - 複数端末でレジ管理
 - データのサーバーへの保存
 - 世界征服
+
+# Service URL
+Netlifyでmasterブランチを自動デプロイしています。
+
+https://locaregi.netlify.app
