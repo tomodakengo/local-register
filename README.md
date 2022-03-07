@@ -1,24 +1,12 @@
-# local-register
+# Nanikore?
+ローカルレジスターは、Local Storageを使用した簡易レジスターです。
 
-## Project setup
-```
-npm install
-```
+# Tokucho
+- 商品登録
+- 小計計算
+- 金庫内金額の管理
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
-
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+# Dekinai-Koto
+- 複数端末でレジ管理
+- データのサーバーへの保存
+- 世界征服
