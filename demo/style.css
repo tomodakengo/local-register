@@ -66,11 +66,18 @@ main{
     background-color: rgb(190, 190, 190);
 }
 
+#l-subtotal-wrapper .c-wrapper-title button {
+    display: none;
+}
+
 .c-wrapper-content {
     flex: 1;
     height: 100%;
 }
 
+/* ----------
+Item List
+---------- */
 .c-itemList {
     list-style: none;
     padding: 0;
@@ -136,4 +143,107 @@ main{
 }
 .c-item.is-add .c-item-action button {
     background-color: rgb(255, 255, 255);
+}
+
+/* ----------
+Sub Total
+---------- */
+.c-cartItemList {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.c-cartItem {
+    margin: 5px 0;
+    padding: 5px 0;
+    border-bottom: 1px solid rgb(240, 240, 240);
+    display: flex;
+    align-items: center;
+    font-size: 0.8rem;
+    color: rgb(120, 120, 120);
+}
+.c-cartItem:last-child {
+    border-bottom: none;
+}
+
+.c-cartItem-name {
+    flex: 1;
+}
+.c-cartItem.is-subtotal .c-cartItem-name {
+    font-weight: bold;
+}
+
+.c-cartItem-price {
+    margin-left: auto;
+    margin-right: 5px;
+    font-size: 1rem;
+    font-weight: bold;
+}
+.c-cartItem.is-subtotal .c-cartItem-price {
+    margin-right: calc(5px + 1.8rem);
+}
+
+.c-cartItem-action {
+    border: none;
+    background-color: transparent;
+}
+
+
+/* ----------
+Responsive
+---------- */
+@media screen and (max-width: 1000px) {
+    .l-grid-wrapper {
+        width: 100vw;
+        height: calc(100% - 40px);
+        grid-template-columns: 1fr;
+    }
+    #l-itemList-wrapper {
+        width: 100vw;
+        max-height: calc(100vh - 40px);
+        grid-area: 1 / 1 / 2 / 2;
+    }
+    #l-subtotal-wrapper {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        max-height: 75px;
+        box-shadow: 10px 10px 20px 5px rgba(190, 190, 190, 0.5);
+        border-radius: 10px 10px 0 0;
+        transition: 0.2s ease-in-out;
+    }
+    #l-subtotal-wrapper .c-wrapper-title button {
+        display: block;
+    }
+    #l-subtotal-wrapper.is-show {
+        max-height: 90vh;
+        transition: 0.5s ease-in;
+    }
+    /* ----------
+    Item List
+    ---------- */
+    .c-item.is-add input {
+        width: 100%;
+        border: 1px solid rgb(190, 190, 190);
+        background-color: rgb(255, 255, 255);
+        border-radius: 5px;
+        margin: 5px;
+        font-weight: normal;
+        font-size: 1rem;
+    }
+    .c-item.is-add .c-item-details {
+        flex-direction: column;
+    }
+    .c-item.is-add .c-item-details li {
+        display: flex;
+        margin: 0;
+    }
+    .c-item.is-add .c-item-details li span {
+        width: 2rem;
+    }
+    .c-item.is-add .c-item-action button {
+        background-color: rgb(255, 255, 255);
+    }
 }

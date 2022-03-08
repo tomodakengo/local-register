@@ -84,12 +84,41 @@
             <div id="l-subtotal-wrapper">
                 <div class="c-wrapper-title">
                     <h2>Subtotal</h2>
+                    <button id="js-toggle-isshow">⬆️Show</button>
+                </div>
+                <div class="c-wrapper-content">
+                    <ul class="c-cartItemList">
+                        <li class="c-cartItem">
+                            <span class="c-cartItem-name">Item Name</span>
+                            <span class="c-cartItem-price">2000</span>
+                            <button class="c-cartItem-action">❌</button>
+                        </li>
+                        <li class="c-cartItem">
+                            <span class="c-cartItem-name">Item Name</span>
+                            <span class="c-cartItem-price">2000</span>
+                            <button class="c-cartItem-action">❌</button>
+                        </li>
+                        <li class="c-cartItem is-subtotal">
+                            <span class="c-cartItem-name">SubTotal</span>
+                            <span class="c-cartItem-price">4000</span>
+                        </li>
+                    </ul>
                 </div>
             </div>
 
         </div>
 
     </main>
+
+    <script>
+        var trigger = document.getElementById('js-toggle-isshow');
+            if (trigger) {
+                trigger.addEventListener('click', function () {
+                    var target = document.getElementById('l-subtotal-wrapper');
+                    target.classList.toggle('is-show');
+                }, false);
+            }
+    </script>
     
 </body>
 </html>
