@@ -10,29 +10,83 @@
 
     <main>
 
-        <div id="itemList_Wrapper">
-            <ul id="itemList">
-                <li class="item">
-                    <div class="itemHeader">
-                        <span class="name">こんな感じの商品名</span>
-                        <button class="addButton">＋</button>
-                    </div>
-                    <div class="itemContent">
-                        <span class="price">2000</span>
-                        <span class="stock">20</span>
-                    </div>
-                    
-                </li>
-            </ul>
-        </div>
+        <div class="l-grid-wrapper">
 
-        <div id="register_Wrapper">
-            <div id="subTotal_Wrapper">
-                a
-            </div>
-            <div id="bankTotal_Wrapper">
+            <div id="l-itemList-wrapper">
+                <div class="c-wrapper-title">
+                    <h2>Items</h2>
+                    <button>🖊️Edit</button>
+                </div>
+                <div class="c-wrapper-content">
+                    <ul class="c-itemList">
 
+                        <li class="c-item is-add">
+                            <div class="c-item-name">
+                                <input type="text" placeholder="Item Name">
+                            </div>
+                            <ul class="c-item-details">
+                                <li>
+                                    <span>価格</span>
+                                    <input type="number" placeholder="2000">
+                                </li>
+                                <li>
+                                    <span>在庫</span>
+                                    <input type="number" placeholder="50">
+                                </li>
+                            </ul>
+                            <div class="c-item-action">
+                                <button>➕</button>
+                            </div>
+                        </li>
+
+                        <li class="c-item">
+                            <div class="c-item-name">
+                                Item Name
+                            </div>
+                            <ul class="c-item-details">
+                                <li>
+                                    <span>価格</span>
+                                    2000
+                                </li>
+                                <li>
+                                    <span>在庫</span>
+                                    50
+                                </li>
+                            </ul>
+                            <div class="c-item-action">
+                                <button>🗑️</button>
+                            </div>
+                        </li>
+
+                        <li class="c-item">
+                            <div class="c-item-name">
+                                Item Name
+                            </div>
+                            <ul class="c-item-details">
+                                <li>
+                                    <span>価格</span>
+                                    2000
+                                </li>
+                                <li>
+                                    <span>在庫</span>
+                                    50
+                                </li>
+                            </ul>
+                            <div class="c-item-action">
+                                <button>🛒</button>
+                            </div>
+                        </li>
+
+                    </ul>
+                </div>
             </div>
+
+            <div id="l-subtotal-wrapper">
+                <div class="c-wrapper-title">
+                    <h2>Subtotal</h2>
+                </div>
+            </div>
+
         </div>
 
     </main>
