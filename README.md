@@ -14,3 +14,7 @@
 Netlifyでmasterブランチを自動デプロイしています。
 
 https://locaregi.netlify.app
+
+# Bibo-Roku
+Zennを使ってみたかったので書いてみました。
+https://zenn.dev/akarisano/articles/e861771cf05c6c
