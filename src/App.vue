@@ -192,6 +192,7 @@ export default {
 *::before,
 *::after {
   box-sizing: border-box;
+  font-family: system-ui;
 }
 body,
 h1,
