@@ -259,7 +259,7 @@ body {
 main {
   width: 100%;
   height: 100vh;
-  height: -webkit-fill-available;
+  min-height: -webkit-fill-available;
   display: flex;
   justify-content: center;
   background-color: rgba(0, 0, 0, 0.05);
