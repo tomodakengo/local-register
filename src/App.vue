@@ -251,6 +251,7 @@ html,
 body {
   width: 100%;
   height: 100%;
+  height: -webkit-fill-available;
   margin: 0;
   padding: 0;
   overflow: hidden;
@@ -258,6 +259,7 @@ body {
 main {
   width: 100%;
   height: 100vh;
+  height: -webkit-fill-available;
   display: flex;
   justify-content: center;
   background-color: rgba(0, 0, 0, 0.05);
