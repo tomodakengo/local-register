@@ -4,7 +4,6 @@
 # Tokucho
 - 商品登録
 - 小計計算
-- 金庫内金額の管理
 
 # Dekinai-Koto
 - 複数端末でレジ管理
@@ -15,3 +14,7 @@
 Netlifyでmasterブランチを自動デプロイしています。
 
 https://locaregi.netlify.app
+
+# Bibo-Roku
+Zennを使ってみたかったので書いてみました。
+https://zenn.dev/akarisano/articles/e861771cf05c6c
